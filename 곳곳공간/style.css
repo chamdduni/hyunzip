@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #333333;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+}
+ul, li { 
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+img{
+  width: 100%; height: 100%;
+}
+
+
+.btn-box{
+  display: flex;
+}
+.btn-box>.more-btn-1{
+  border: 1px solid #333333;
+  background-color: #333333;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.btn-box>.more-btn-1:hover{
+  background-color: #fff;
+  transform: translateY(-5px);
+}
+.btn-box>.more-btn-1>a{
+  display: block;
+  padding: 10px 25px;
+  font-weight: 500; font-size: 14px;
+  display: flex; align-items: center; gap:5px;
+}
+.btn-box>.more-btn-1>a>span{
+  color: #fff;
+}
+.btn-box>.more-btn-1>a:hover >span{
+  color: #333;
+}
+.btn-box>.more-btn-2{
+  border: 1px solid #333333;
+  transition: 0.5s;
+}
+.btn-box>.more-btn-2>a{
+  display: block;
+  padding: 10px 25px;
+  font-weight: 500; font-size: 14px;
+}
+.btn-box>.more-btn-2:hover{
+  background-color: #333333;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.btn-box>.more-btn-3{
+  border: 1px solid #333333;
+  background-color: #fff;
+  transition: 0.5s;
+  display: none;
+}
+.btn-box>.more-btn-3:hover{
+  background-color: #333;
+  transform: translateY(-5px);
+}
+.btn-box>.more-btn-3>a{
+  display: block;
+  width: 35px; height: 35px;
+  font-weight: 500; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.btn-box>.more-btn-3>a>span{
+  color: #333;
+}
+.btn-box>.more-btn-3>a:hover >span{
+  color: #fff;
+}
+
+
+.top-bar .menu-bar{
+  display: none;
+}
+
+
+.main{
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+
+/* 탑바 */
+.top-bar{
+  /* border: 1px solid orange; */
+  border-bottom: 2px solid #333333;
+  width: 100%;
+}
+.top-bar-container{
+  /* border: 1px solid green; */
+  /* max-width: 1920px; */
+  margin-left:auto; margin-right:auto;
+  margin: 30px 30px;
+  display:flex; justify-content:space-between; align-items: center;
+}
+.top-bar-container>.top-bar-logo-box{
+  /* border: 1px solid blue; */
+  width: 193px; height: 36px;
+}
+.top-bar-container>nav{
+  /* border: 1px solid blue; */
+  height: 100%;
+}
+.top-bar-container>nav>ul{
+  /* border: 1px solid red; */
+  display: flex; align-items: center; gap: 30px;
+}
+.top-bar-container>nav>ul>li{
+  /* border: 1px solid orange; */
+  font-size: 14px; font-weight: 500;
+}
+/* 네비 호버시 두꼐 변경 */
+.top-bar-container>nav>ul>li:hover{
+  font-weight: 600;
+}
+
+
+
+/* 배너 */
+.banner{
+  /* border: 1px solid orange; */
+  width: 100%;
+}
+.banner-top{
+  /* border: 1px solid green; */
+}
+.banner-top>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 50px 30px;
+  display: flex; justify-content: space-between; align-items: end;
+}
+.banner-top .banner-top-text{
+  /* border: 1px solid red; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 80px; letter-spacing: 0px;
+}
+.banner-bottom{
+  /* border: 1px solid green; */
+  background-image: url(image/banner_wide.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-bottom>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px; height: 700px;
+  margin-left: auto; margin-right: auto;
+  padding: 0 30px 100px 30px;
+  display: flex; flex-direction: column; 
+  justify-content: flex-end; gap: 20px;
+}
+.banner-bottom>.max-1440>.b-b-title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 36px; letter-spacing: 0px;
+  color: #fff;
+}
+.banner-bottom>.max-1440>.b-b-sub{
+  font-weight: 400; font-size: 18px;
+  color: #fff;
+}
+
+
+/* 어바웃 */
+.about{
+  /* border: 1px solid orange; */
+  width: 100%;
+  padding-top: 100px; padding-bottom: 150px; 
+  display: flex; gap:100px; flex-direction: column;
+}
+.about-top{
+  /* border: 1px solid green; */
+}
+.about-top>.max-1440{
+  /* border: 1px solid blue; */
+  border-bottom: 2px solid #333333;
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 30px 30px;
+}
+.about-top span{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 48px; letter-spacing: 0px;
+}
+.about-bottom{
+  /* border: 1px solid green; */
+}
+.about-bottom>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 0px 30px;
+  display: flex; gap:50px; align-items: center;
+}
+.about-bottom .about-b-imgbox{
+  /* border: 1px solid red; */
+  width: 793px; height: 100%;
+}
+.about-bottom .about-b-textbox{
+  /* border: 1px solid red; */
+  display: flex; flex-direction: column; gap:50px;
+}
+.about-b-textbox>.about-b-t-top{
+  /* border: 1px solid orange; */
+  display: flex; flex-direction: column; gap:30px;
+}
+.about-b-textbox>.about-b-t-top>.about-b-t-title{
+  font-weight: 600; font-size: 24px; line-height: 36px;
+}
+.about-b-textbox>.about-b-t-top>.about-b-t-text{
+  font-weight: 400; font-size: 18px; line-height: 30px;
+}
+.about-b-textbox>.about-b-t-top>.about-b-t-text-2{
+  display: none;
+}
+
+
+
+
+/* 스페셜 */
+.special{
+  /* border: 1px solid orange; */
+  background-color: #F5F5F5;
+  width: 100%;
+  padding-top: 100px; padding-bottom: 150px; 
+  display: flex; gap:100px; flex-direction: column;
+}
+.special-top{
+  /* border: 1px solid green; */
+}
+.special-top>.max-1440{
+  /* border: 1px solid blue; */
+  border-bottom: 2px solid #333333;
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 30px 30px;
+}
+.special-top span{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 48px; letter-spacing: 0px;
+}
+.special-bottom{
+  /* border: 1px solid green; */
+}
+.special-bottom>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap:30px;
+}
+.special-bottom .special-box{
+  /* border: 1px solid red; */
+  background-color: #fff;
+  width: 200px; height: 280px;
+  display: flex; flex-direction: column; justify-content: center; 
+  align-items: center; gap:25px;
+  transition: 0.3s;
+}
+.special-bottom .special-box:hover{
+  border: 2px solid #333333;
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px 5px  rgba(0, 0, 0, 0.08);
+}
+.special-box>.img-box{
+  /* border: 1px solid orange; */
+  width: 120px; height: 120px;
+}
+.special-box>.img-text{
+  /* border: 1px solid orange; */
+  text-align: center;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.special-box>.img-text>.img-t-title{
+  font-weight: 600; font-size: 24px;
+}
+.special-box>.img-text>.img-t-sub{
+  font-weight: 400; font-size: 14px; line-height: 20px;
+}
+
+
+
+
+/* 공간 */
+.space{
+  /* border: 1px solid orange; */
+  width: 100%;
+  padding-top: 100px; padding-bottom: 150px; 
+  display: flex; gap:100px; flex-direction: column;
+}
+.space-top{
+  /* border: 1px solid green; */
+}
+.space-top>.max-1440{
+  /* border: 1px solid blue; */
+  border-bottom: 2px solid #333333;
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 30px 30px;
+}
+.space-top span{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 48px; letter-spacing: 0px;
+}
+.space-bottom{
+  /* border: 1px solid green; */
+}
+.space-bottom>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 0px 30px;
+  display: flex; flex-direction:column; gap:50px;
+}
+.mapo-space-box{
+  /* border: 1px solid red; */
+  display: flex; align-items: center; gap:50px;
+}
+.mapo-space-box>.left-img-box{
+  /* border: 1px solid orange; */
+  width: 675px; height: 100%;
+}
+.mapo-space-box>.right-text-box{
+  /* border: 1px solid orange; */
+  display: flex; flex-direction:column; gap:50px;
+}
+.mapo-space-box .top-text-box{
+  /* border: 1px solid green; */
+  display: flex; flex-direction:column; gap:20px;
+}
+.mapo-space-box .top-text-box>.top-space-title{
+  /* border: 1px solid blue; */
+  display: flex; flex-direction:column; gap:5px;
+}
+.mapo-space-box .top-space-title>.space-title-map{
+  /* border: 1px solid red; */
+  font-weight: 400; font-size: 14px;
+}
+.mapo-space-box .top-space-title>.space-title-name{
+  /* border: 1px solid red; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 28px; letter-spacing: 0px;
+}
+.mapo-space-box .top-text-box>.top-space-sub{
+  /* border: 1px solid blue; */
+  font-weight: 400; font-size: 18px; line-height: 30px;
+}
+.mapo-space-box .top-text-box>.top-space-sub-2{
+  display: none;
+}
+.space-list-box{
+  /* border: 1px solid red; */
+  display: flex; gap:30px; row-gap: 50px;
+  flex-wrap: wrap;
+}
+.space-box{
+  /* border: 1px solid orange; */
+  display: flex; flex-direction:column; gap:20px;
+}
+.space-box>.space-img-box{
+  /* border: 1px solid green; */
+  width: 440px; height: 100%;
+}
+.space-box>.space-title{
+  /* border: 1px solid green; */
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.space-box>.space-title>.space-title-text{
+  /* border: 1px solid blue; */
+  display: flex; flex-direction:column; gap:5px;
+}
+.space-title>.space-title-text>.space-title-map{
+  /* border: 1px solid red; */
+  font-weight: 400; font-size: 14px;
+}
+.space-title>.space-title-text>.space-title-name{
+  /* border: 1px solid red; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 700; font-size: 28px;
+}
+
+
+
+
+/* 연락 */
+.contact{
+  /* border: 1px solid orange; */
+  width: 100%;
+  padding-top: 50px; padding-bottom: 150px; 
+  display: flex; gap:100px; flex-direction: column;
+}
+.contact-top{
+  /* border: 1px solid green; */
+}
+.contact-top>.max-1440{
+  /* border: 1px solid blue; */
+  border-bottom: 2px solid #333333;
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 30px 30px;
+}
+.contact-top span{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; font-size: 48px; letter-spacing: 0px;
+}
+.contact-bottom{
+  /* border: 1px solid green; */
+}
+.contact-bottom>.max-1440{
+  /* border: 1px solid blue; */
+  max-width: 1440px;
+  margin-left: auto; margin-right: auto;
+  padding: 0px 30px;
+  display: flex; flex-direction: column; gap:50px;
+}
+.contact-bottom .contact-img-box{
+  /* border: 1px solid red; */
+  width: 100%; height: 100%;
+}
+.contact-img-2{
+  display: none;
+}
+.contact-bottom .contact-text-box{
+  /* border: 1px solid red; */
+  display: flex; flex-direction: column; gap:50px;
+}
+.contact-text-box>.contact-t-text{
+  /* border: 1px solid orange; */
+  display: flex; flex-direction: column; gap:30px;
+}
+.contact-t-text>.contact-input-box{
+  /* border: 1px solid green; */
+  display: flex; flex-direction: column;
+}
+.contact-input-box>.input-title{
+  font-weight: 600; font-size: 18px;
+}
+.contact-input-box>.input-title>span{
+  color:red;
+}
+.contact-input-box>.input-box{
+  border-bottom: 1px solid #333333;
+  max-width: 500px; height: 50px;
+  display: flex; align-items: center;
+}
+.contact-input-box>.input-box > input {
+  max-width: 500px; border: 0px;
+  font-size: 14px; font-weight: 400; color:#666;
+}
+.contact-input-box>.input-box>input:focus {outline:none;}
+.contact-input-box>.input-box>input::placeholder {color: #CACACA;}
+
+.contact-input-box-3>.input-box{
+  border-bottom: 1px solid #333333;
+  max-width: 500px; height: 100px;
+  display: flex; align-items: flex-start; margin-top: 15px;
+}
+
+
+
+
+/* 푸터 */
+.footer{
+  /* border: 1px solid orange; */
+  border-top: 2px solid #333333;
+  width: 100%;
+}
+.footer-container{
+  /* border: 1px solid green; */
+  /* max-width: 1920px; */
+  margin-left:auto; margin-right:auto;
+  margin: 70px 30px;
+  display:flex; flex-direction: column; gap:30px;
+}
+.footer-top-bar{
+  /* border: 1px solid blue; */
+  display:flex; justify-content:space-between; align-items: center;
+}
+.footer-top-bar>.top-bar-logo-box{
+  /* border: 1px solid red; */
+  width: 193px; height: 36px;
+}
+.footer-top-bar>nav{
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.footer-top-bar>nav>ul{
+  /* border: 1px solid orange; */
+  display: flex; align-items: center; gap: 30px;
+}
+.footer-top-bar>nav>ul>li{
+  /* border: 1px solid green; */
+  font-size: 14px; font-weight: 500;
+}
+/* 네비 호버시 두꼐 변경 */
+.footer-top-bar>nav>ul>li:hover{
+  font-weight: 600;
+}
+.footer-text-box{
+  /* border: 1px solid blue; */
+  display:flex; flex-direction: column; gap:30px;
+}
+.footer-text-box>.footer-info-box{
+  /* border: 1px solid red; */
+  display:flex; flex-direction: column; gap:10px;
+}
+.footer-text-box>.footer-info-box>.info-box{
+  /* border: 1px solid orange; */
+  display:flex;gap:5px;
+}
+.footer-text-box>.footer-info-box>.info-box-4{
+  display: none;
+}
+.footer-info-box>.info-box>.info-bold{
+  font-size: 14px; font-weight: 600; 
+}
+.footer-info-box>.info-box>span{
+  font-size: 14px; font-weight: 400; 
+}
+.footer-text-box>.footer-copyright{
+  /* border: 1px solid red; */
+  font-size: 14px; font-weight: 600; 
+}
