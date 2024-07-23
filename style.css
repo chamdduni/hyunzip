@@ -91,6 +91,8 @@ display: flex; align-items: center; gap:20px;}
 /* 태그 */
 .tag{display: flex; align-items: center; gap:8px; margin-bottom: 2px;}
 .tag-box{border: 1px solid #333; border-radius: 30px; padding: 3px 8px; font-weight: 400; font-size: 14px;}
+.re-tag-box{border: 1px solid #333; background-color: #ddd; border-radius: 30px; padding: 3px 8px; font-weight: 400; font-size: 14px; color: #333;}
+
 
 /* 작품 미리보기 화면 */
 /* .pf-preview{flex-grow: 1; position: relative;} */
@@ -115,13 +117,29 @@ display: flex; align-items: center; gap:20px;}
   content: " ";
   z-index: -1;
 }
-.preview-screen::-webkit-scrollbar{width: 0; /* 스크롤바의 너비 */}
+/* .preview-screen::-webkit-scrollbar{width: 0; */
+.preview-screen::-webkit-scrollbar {
+  width: 15px;
+}
+.preview-screen::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-left:solid 1px #333;
+}
+.preview-screen::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+.preview-screen::-webkit-scrollbar-button {
+  display: none;
+}
 .website-btn{position: fixed; padding: 10px 22px; border-radius: 30px; 
-  border: 1px solid #333; background-color: #fff; right: 30px; bottom: 30px;
+  border: 1px solid #333; background-color: #fff; right: 45px; bottom: 30px;
   font-size: 16px; font-weight: 500; cursor:pointer; }
 .website-btn:hover{background-color: #f5f5f5;}
 .pf-info-text{display: flex; gap: 15px; font-size: 16px; font-weight: 400; line-height: 26px;}
 .pf-main-text{flex-grow: 1; flex-basis: 0; padding-right: 15px; border-right: 1px solid #333;}
 .pf-sub-text{flex-grow: 1; flex-basis: 0; display: flex; flex-direction: column; gap:5px;} 
 .pf-sub-text>li{display: flex; gap:10px;} 
-.span{font-weight: 500;}
+.span{font-weight: 600;}
