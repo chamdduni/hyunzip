@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>쓰담마라톤</title>
+ <link rel="icon" href="/image/sseudam-pavicon.png">
+ <!-- css 연결 -->
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="normal.css">
+
+ <!-- 스와이퍼 불러오기 -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- 스크립트 연결 -->
+ <script src="script.js" defer></script>
+ <script src="jquery-3.7.1.min.js"></script>
+
+ <!-- 폰트어썸 cdnjs -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <script type="text/javascript" src="jquery.slideto.min.js"></script>
+
+ <script type="text/javascript">
+ 
+ window.onscroll = function() {Function()};
+ function Function() {
+   if (document.documentElement.scrollTop > 50) {
+     document.getElementById("img").className = "section-1-right-img-left";
+   }
+   if (document.documentElement.scrollTop < 50) {
+     document.getElementById("img").className = "section-1-right-img-right";
+   }
+ }
+ 
+ $(function(){
+  var rollHeader = 50;
+   $(window).scroll(function() {
+   var scroll = getCurrentScroll();
+     if ( scroll >= rollHeader ) {
+        $('.top-bar-section').addClass('roll');
+     }
+     else {
+       $('.top-bar-section').removeClass('roll');
+     }
+   });
+ 
+ function getCurrentScroll() {
+   return window.pageYOffset || document.documentElement.scrollTop;
+   }
+ });
+
+ 
+ </script>
+</head>
+<body>
+
+ <!-- 탑바 -->
+ <div class="top-bar-section">
+  <div class="top-bar-container">
+   <div class="top-bar-top">
+    <div class="logo-box">
+     <a href="#"><img src="image/sseudam-logo.png" alt="로고"></a>
+    </div>
+   </div>
+   <div class="top-bar-bottom">
+    <nav>
+     <ul>
+      <li><a href="#">대회안내</a></li>
+      <li><a href="#">대회코스</a></li>
+      <li><a href="#">갤러리</a></li>
+      <li><a href="#">커뮤니티</a></li>
+      <li><a href="#">참가신청</a></li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </div>
+ 
+ <!-- 섹션1 -->
+ <div class="section-1">
+  <div class="section-1-container-1">
+   <div class="section-1-left-box">
+    <div class="section-1-text-box">
+     <div class="sub-text">내 건강도 지키고<br>
+      우리의 지구도 살리는</div>
+     <div class="title-text">나의 한 걸음!</div>
+    </div>
+   <div class="section-1-more-btn"> 
+    <a href="#">
+     지금 접수하기
+    </a>
+    </div>
+   </div>
+   <div class="section-1-right-img-right" id="img">
+    <img src="image/sseudam-cha.png" alt="쓰담마라톤_캐릭터">
+   </div>
+  </div>
+  <div class="section-1-container-2">
+   <p><span>‘쓰담’</span>은 <span>‘쓰레기를 담는다’</span>는 뜻과 <span>‘쓰다듬어 준다’</span>는 뜻을 가지고 있습니다.<br> 
+    한강에 버려진 쓰레기를 주워 담으며 우리가 살아가는 지구를 쓰다듬어 주세요.<br>
+    마라톤을 하며 내 건강도 지키고 우리의 지구도 살릴 수 있습니다.</p>
+  </div>
+ </div>
+
+ <!-- 섹션1 밑 이미지 -->
+ <div class="section-1-bottom">
+  <div class="section-1-bottom-img"></div>
+ </div>
+
+ <!-- 섹션2 포스터 -->
+ <div class="section-2">
+  <div class="section-2-container">
+   <div class="section-2-poster">
+    <img src="image/sseudam-poster.png" alt="쓰담마라톤-포스터">
+   </div>
+   <div class="section-2-title-img"><img src="image/sseudam-absolute-logo.png" alt="포스터-로고"></div>
+   <div class="section-2-title-cloud1"><img src="image/sseudam-absolute-cloud1.png" alt="포스터-구름1"></div>
+   <div class="section-2-title-cloud2"><img src="image/sseudam-absolute-cloud2.png" alt="포스터-구름2"></div>
+   <div class="section-2-title-cloud3"><img src="image/sseudam-absolute-cloud2.png" alt="포스터-구름3"></div>
+   <div class="section-2-title-cloud4"><img src="image/sseudam-absolute-cloud1.png" alt="포스터-구름4"></div>
+   <div class="section-2-btn">
+    <a href="#">대회요강 보기</a>
+   </div>
+  </div>
+ </div>
+
+ <!-- 섹션3 대회코스-->
+ <div class="section-3">
+  <div class="section-3-container">
+   <div class="section-3-top-box">
+    <div class="section-title">쓰담 코스</div>
+    <div class="section-sub-title">원하는 길이의 코스를 확인해보세요</div>
+   </div>
+   <div class="section-3-bottom-box">
+    <div class="section-3-item-box section-3-item-box-1">
+      <div class="item-img-box">
+        <img src="image/sseudam-course1.png" alt="하프코스지도">
+      </div>
+      <div class="item-bottom-box">
+        <div class="item-text-box">
+          <div class="item-title-box">
+            <div class="title-name">하프코스</div>
+            <div class="title-number">21.0975km</div>
+          </div>
+          <div class="item-sub-text">
+            <div class="item-sub-t-1">여의도한강공원 이벤트광장 ~ 마곡대교 앞(반환점)</div>
+            <div class="item-sub-t-2">여의도한강공원 이벤트 광장에서 출발하여 약 10.5km를 달려 마곡대교 앞 반환점을 도는 코스입니다.<br>
+              갈대와 물억새가 무성하게 자라며 밤섬, 여의도 샛강 등이 비교적 자연 그대로 보존되어 있는 자연 친화형 장소이니 달리면서 자연을 담아보세요.</div>
+          </div>
+        </div>
+        <div class="item-btn-box">
+          <a href="#">더보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="section-3-item-box section-3-item-box-2">
+      <div class="item-img-box">
+        <img src="image/sseudam-course2.png" alt="미니코스지도">
+      </div>
+      <div class="item-bottom-box">
+        <div class="item-text-box">
+          <div class="item-title-box">
+            <div class="title-name">미니코스</div>
+            <div class="title-number">10km</div>
+          </div>
+          <div class="item-sub-text">
+            <div class="item-sub-t-1">여의도한강공원 이벤트광장 ~ 성산대교 부근(반환점)</div>
+            <div class="item-sub-t-2">여의도한강공원 이벤트 광장에서 출발하여 5km를 달려 성산대교 부근 반환점을 도는 코스입니다.<br>
+              갈대와 물억새가 무성하게 자라며 밤섬, 여의도 샛강 등이 비교적 자연 그대로 보존되어 있는 자연 친화형 장소이니 달리면서 자연을 담아보세요.</div>
+          </div>
+        </div>
+        <div class="item-btn-box">
+          <a href="#">더보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="section-3-item-box section-3-item-box-3">
+      <div class="item-img-box">
+        <img src="image/sseudam-course3.png" alt="건강코스지도">
+      </div>
+      <div class="item-bottom-box">
+        <div class="item-text-box">
+          <div class="item-title-box">
+            <div class="title-name">건강코스</div>
+            <div class="title-number">5km</div>
+          </div>
+          <div class="item-sub-text">
+            <div class="item-sub-t-1">여의도한강공원 이벤트광장 ~ 서울마리나 부근(반환점)</div>
+            <div class="item-sub-t-2">여의도한강공원 이벤트 광장에서 출발하여 2.5km를 달려 서울마리나 부근 반환점을 도는 코스입니다.<br>
+              갈대와 물억새가 무성하게 자라며 밤섬, 여의도 샛강 등이 비교적 자연 그대로 보존되어 있는 자연 친화형 장소이니 달리면서 자연을 담아보세요.</div>
+          </div>
+        </div>
+        <div class="item-btn-box">
+          <a href="#">더보기</a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- 섹션4 공지사항-->
+ <div class="section-4">
+  <div class="section-4-container">
+   <div class="section-4-top-box">
+    <div class="section-title">쓰담 소식</div>
+    <div class="section-sub-title">쓰담 마라톤 소식을 전해드려요</div>
+   </div>
+   <div class="section-4-bottom-box">
+    <div class="section-4-rhdwl-box">
+      <div class="rhdwl-box rhdwl-box-1">
+        <div class="rhdwl-left-date"><p>2024<br><span>3.20</span></p></div>
+        <div class="rhdwl-right-box">
+          <div class="rhdwl-right-text">
+            <div class="rhdwl-title">20인 이상 단체 참여시 특전 증정</div>
+            <div class="rhdwl-sub">2024 쓰담마라톤 단체 특전 안내드립니다. 대회 당일 출발 전후의 휴식공간 부스 제공해드립니다. 30명 이상 단체 참가시 동호회 부스 1동입니다.</div>
+          </div>
+          <div class="rhdwl-right-arrow">
+            <a href="#"><img src="image/arrow_forward_ios.png" alt="화살표"></a>
+          </div>
+        </div>
+      </div>
+      <div class="rhdwl-box rhdwl-box-2">
+        <div class="rhdwl-left-date"><p>2024<br><span>2.14</span></p></div>
+        <div class="rhdwl-right-box">
+          <div class="rhdwl-right-text">
+            <div class="rhdwl-title">코스 지도 안내</div>
+            <div class="rhdwl-sub">코스별 지도가 업데이트되었으니 확인 부탁드립니다.</div>
+          </div>
+          <div class="rhdwl-right-arrow">
+            <a href="#"><img src="image/arrow_forward_ios.png" alt="화살표"></a>
+          </div>
+        </div>
+      </div>
+      <div class="rhdwl-box rhdwl-box-3">
+        <div class="rhdwl-left-date"><p>2023<br><span>12.18</span></p></div>
+        <div class="rhdwl-right-box">
+          <div class="rhdwl-right-text">
+            <div class="rhdwl-title">2024 쓰담마라톤 접수 안내</div>
+            <div class="rhdwl-sub">내년 6월에 열리는 쓰담마라톤의 접수가 1월 8일(월)부터 시작합니다. 많은 신청 부탁드립니다.</div>
+          </div>
+          <div class="rhdwl-right-arrow">
+            <a href="#"><img src="image/arrow_forward_ios.png" alt="화살표"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-4-item-group">
+      <div class="item-group item-group-1">
+        <div class="item-group-text">
+          <div class="item-group-title">접수하기</div>
+          <div class="item-group-sub">지금 바로 접수하세요</div>
+        </div>
+        <div class="item-group-btn">
+          <a href="#">접수하기</a>
+        </div>
+      </div>
+      <div class="item-group item-group-2">
+        <div class="item-group-text">
+          <div class="item-group-title">FAQ</div>
+          <div class="item-group-sub">자주 묻는 질문을 확인해보세요</div>
+        </div>
+        <div class="item-group-btn">
+          <a href="#">바로가기</a>
+        </div>
+      </div>
+      <div class="item-group item-group-3">
+        <div class="item-group-text">
+          <div class="item-group-title">Q&A</div>
+          <div class="item-group-sub">궁금하신 사항을 남겨주세요</div>
+        </div>
+        <div class="item-group-btn">
+          <a href="#">바로가기</a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- 섹션5 갤러리-->
+  <div class="section-5">
+   <div class="section-5-container">
+    <div class="section-5-top-box">
+      <div class="section-5-top-left">
+        <div class="section-title">쓰담 갤러리</div>
+        <div class="section-sub-title">지난 쓰담 마라톤 현장 사진을 구경해보세요</div>
+      </div>
+      <div class="section-5-right-btn">
+        <a href="#">바로가기</a>
+      </div>
+    </div>
+   </div>
+   <div class="section-5-container-2">
+      <!-- 스와이퍼 구조 시작 -->
+      <div class="swiper3">
+        <!-- 여러 슬라이드 페이지 시작 -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide-1">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img1.jpg" alt="사진1">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img2.jpg" alt="사진2">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-3">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img3.jpg" alt="사진3">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-4">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img4.jpg" alt="사진4">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-5">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img5.jpg" alt="사진5">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-6">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img6.jpg" alt="사진6">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-4">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img7.jpg" alt="사진7">
+            </div></a>
+          </div>
+          <div class="swiper-slide swiper-slide-5">
+            <a href="#"><div class="section-5-img-box">
+              <img src="image/sseudam-img8.jpg" alt="사진8">
+            </div></a>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>
+
+  <!-- 푸터 -->
+  <div class="footer-section">
+    <div class="footer-container">
+      <div class="footer-top-box">
+        <div class="footer-top-left">
+          <a href="#"><span style="color: #FFD62C;">개인정보처리방침</span></a>
+          <span>|</span>
+          <a href="#"><span>저작권정책</span></a>
+          <span>|</span>
+          <a href="#"><span>이메일집단수집거부</span></a>
+          <span>|</span>
+          <a href="#"><span>대회요강</span></a>
+          <span>|</span>
+          <a href="#"><span>이벤트안내</span></a>
+          <span>|</span>
+          <a href="#"><span>참가신청안내</span></a>
+        </div>
+        <div class="footer-top-right">
+          <a href="#"><div class="right-btn right-btn-1">
+            <i class="fa-brands fa-instagram"></i>
+          </div></a>
+          <a href="#"><div class="right-btn right-btn-2">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div></a>
+          <a href="#"><div class="right-btn right-btn-2">
+            <i class="fa-brands fa-twitter"></i>
+          </div></a>
+        </div>
+      </div>
+      <div class="footer-bottom-box">
+        <div class="footer-bottom-text-1">
+          <div class="bottom-text-1-title">2024 쓰담 마라톤</div>
+          <span>서울특별시 영등포구 여의도동 123번길 45 6층 2024 쓰담 마라톤 사무국</span>
+        </div>
+        <div class="footer-bottom-text-2">
+          <span>사무국 전화 : 02-1234-5678</span>
+          <span>|</span>
+          <span>sseudam@maraton.co.kr</span>
+          <span>|</span>
+          <span>대표 : 홍길동</span>
+          <span>|</span>
+          <span>사업자등록번호 : 123-45-67890</span>
+        </div>
+        <div class="footer-bottom-text-3">
+          <span>Copyright© 2024 Sseudam Maraton. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-absolute footer-absolute-1">
+      <img src="image/sseudam-trash1.png" alt="쓰담마라톤_쓰레기1">
+    </div>
+    <div class="footer-absolute footer-absolute-2">
+      <img src="image/sseudam-trash2.png" alt="쓰담마라톤_쓰레기2">
+    </div>
+    <div class="footer-absolute footer-absolute-3">
+      <img src="image/sseudam-trash3.png" alt="쓰담마라톤_쓰레기3">
+    </div>
+    <div class="footer-absolute footer-absolute-4">
+      <img src="image/sseudam-trash4.png" alt="쓰담마라톤_쓰레기4">
+    </div>
+    <div class="footer-absolute footer-absolute-5">
+      <img src="image/sseudam-trash5.png" alt="쓰담마라톤_쓰레기5">
+    </div>
+  </div>
+</body>
+</html>
