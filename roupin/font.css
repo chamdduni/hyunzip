@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 100;
+	src: local('SUIT Thin'), url('./font/suit/SUIT-Thin.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 200;
+	src: local('SUIT ExtraLight'), url('./font/suit/SUIT-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 300;
+	src: local('SUIT Light'), url('./SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+	src: local('SUIT Regular'), url('./font/suit/SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: local('SUIT Medium'), url('./font/suit/SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 600;
+	src: local('SUIT SemiBold'), url('./font/suit/SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: local('SUIT Bold'), url('./font/suit/SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 800;
+	src: local('SUIT ExtraBold'), url('./font/suit/SUIT-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 900;
+	src: local('SUIT Heavy'), url('./font/suit/SUIT-Heavy.woff2') format('woff2');
+}
+
+/* 나눔 스퀘어 라운드 폰트 */
+/* font-family: 'NanumSquareRound',sans-serif; 
+Regular(400), Bold(700), Extra Bold(800), Light(300)
+*/
+
+
+.suit-h1{
+  font-family: 'SUIT';
+  font-size: 28px; line-height: 38px; 
+  font-weight: 700;
+}
+.suit-h2{
+  font-family: 'SUIT';
+  font-size: 24px; line-height: 34px; 
+  font-weight: 700;
+}
+.suit-h3{
+  font-family: 'SUIT';
+  font-size: 20px; line-height: 28px; 
+  font-weight: 700;
+}
+.suit-s1{
+  font-family: 'SUIT';
+  font-size: 18px; line-height: 26px; 
+  font-weight: 600;
+}
+.suit-s2{
+  font-family: 'SUIT';
+  font-size: 16px; line-height: 24px; 
+  font-weight: 600;
+}
+.suit-b1{
+  font-family: 'SUIT';
+  font-size: 16px; line-height: 22px; 
+  font-weight: 500;
+}
+.suit-b2{
+  font-family: 'SUIT';
+  font-size: 14px; line-height: 20px; 
+  font-weight: 500;
+}
+.suit-c{
+  font-family: 'SUIT';
+  font-size: 12px; line-height: 18px; 
+  font-weight: 500;
+}
+
+
+
+
+.nanum-h1{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 50px; line-height: 62px; 
+  font-weight: 800;
+}
+.nanum-h2{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 40px; line-height: 52px; 
+  font-weight: 800;
+}
+.nanum-h3{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 32px; line-height: 42px; 
+  font-weight: 800;
+}
+.nanum-h4{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 28px; line-height: 36px; 
+  font-weight: 800;
+}
+.nanum-h5{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 24px; line-height: 30px; 
+  font-weight: 800;
+}
+.nanum-h6{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 20px; line-height: 26px; 
+  font-weight: 800;
+}
+.nanum-s1{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 18px; line-height: 26px; 
+  font-weight: 700;
+}
+.nanum-s2{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 16px; line-height: 24px; 
+  font-weight: 700;
+}
+.nanum-b1{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 16px; line-height: 22px; 
+  font-weight: 700;
+}
+.nanum-b2{
+  font-family: 'NanumSquareRound',sans-serif;
+  font-size: 14px; line-height: 20px; 
+  font-weight: 700;
+}
+
+
+/* font color */
+.c-fff{color: #fff;}
+.c-main{color: #8EB3EC;}
+.c-main8{color: rgba(142, 179, 236, 0.08);}
+.c-333{color: #333;}
+.c-555{color: #555;}
+.c-999{color: #999;}
+.c-red{color: #F74242;}
+

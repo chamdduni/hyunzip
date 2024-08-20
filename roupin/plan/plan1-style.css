@@ -1,0 +1,325 @@
+*{
+  margin: 0; padding: 0;
+  color: #333333;
+  letter-spacing: -1px;
+  font-family: 'SUIT', sans-serif;
+  box-sizing: border-box;
+}
+ul, li { 
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+img{
+  width: 100%; height: 100%;
+}
+
+
+body::-webkit-scrollbar{width: 0; /* 스크롤바의 너비 */}
+
+.disabled-btn{
+  width: 130px; height: 56px;
+  background-color: #dedede;
+  border: 1.5px solid #dedede;
+  border-radius: 10px;
+  display: flex; justify-content: center; align-items: center;
+  cursor: pointer;
+}
+.enabled-btn{
+  width: 150px; height: 56px;
+  background-color: #fff;
+  border: 1.5px solid #dedede;
+  border-radius: 10px;
+  display: flex; justify-content: center; align-items: center;
+}
+.enabled-btn:hover{
+  background-color: #8EB3EC;
+  border: 1.5px solid #8EB3EC;
+}
+.enabled-btn:hover>p{
+  color: #fff;
+}
+
+
+
+.plan1.none{
+  display: none;
+}
+.plan1.flex{
+  display: flex;
+}
+
+.plan{
+  /* border: 1px solid red; */
+  width: 100%; height: 100vh;
+  display: flex;
+}
+.plan-left-box{
+  /* border: 1px solid orange; */
+  width: 500px; height: 100vh;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.plan-left-top-box{
+  border-bottom: 1.5px solid #dedede;
+  background-color: #fff;
+  position: absolute; height: 80px; width: 100%;
+  display: flex;
+}
+.logo-box{
+  border-right: 1.5px solid #dedede;
+  width: 80px; height: 80px;
+  display: flex; justify-content: center; align-items: center;
+}
+.logo-box>a{
+  width: 32px; height: 40px;
+}
+.step-box{
+  /* border: 1px solid blue; */
+  display: flex; flex-grow: 1; flex-basis: 0;
+}
+.step-item{
+  /* border: 1px solid red; */
+  flex-grow: 1; flex-basis: 0;
+  display: flex; justify-content: center; align-items: center;
+  gap:4px; 
+}
+.step-item2{
+  border-left: 1.5px solid #dedede;
+  border-right: 1.5px solid #dedede;
+}
+.step-item>img{
+  width: 24px; height: 24px;
+}
+.step-item-text{
+  /* border: 1px solid orange; */
+  display: flex; flex-direction: column;
+}
+
+
+
+.plan-left-bottom-box{
+  /* border: 1px solid green; */
+  margin-top: 80px; padding: 40px 30px 50px 30px;
+  display: flex; flex-direction: column; gap:32px;
+  overflow: auto; align-items: center;
+}
+.plan-left-bottom-box::-webkit-scrollbar{width: 0; /* 스크롤바의 너비 */}
+
+.location-box{
+  /* border: 1px solid blue; */
+  display: flex; flex-direction: column; gap:8px;
+  width: 100%;
+}
+.location-title{
+  /* border: 1px solid red; */
+  display: flex; gap:4px; align-items: center;
+}
+.location-title>a{
+  width: 24px; height: 24px;
+}
+
+
+.travel-plan-box{
+  /* border: 1px solid blue; */
+  display: flex; flex-direction: column; gap:28px;
+  width: 100%;
+}
+.travel-date-title{
+  /* border: 1px solid red; */
+  display: flex; gap:4px; align-items: center;
+}
+.travel-date-title>a{
+  width: 24px; height: 24px;
+}
+.travel-plan-box > li.close > .a-box {
+  display:block;
+}
+.travel-plan-box > li.close > .q-box::after {
+  background: url(../image/icon-smallup-333.png);
+  width: 24px; height: 24px;
+  background-size: 24px 24px;
+}
+.travel-plan-box > li {
+  /* border: 1px solid red; */
+  display: flex; flex-direction: column; gap:12px;
+}
+.travel-number-title{
+  /* border: 1px solid red; */
+  display: flex; gap:4px; align-items: center;
+}
+.travel-number-title>a{
+  width: 24px; height: 24px;
+}
+.q-box {
+  border: 1.5px solid #dedede;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: space-between;
+  cursor:pointer;
+}
+.q-box-text{
+  /* border: 1px solid orange; */
+  display: flex; gap:8px; align-items: center;
+}
+.q-box-text>img{
+  width: 24px; height: 24px;
+}
+.q-box::after {
+  /* border: 1px solid orange; */
+  content: "";
+  background: url(../image/icon-smalldown-333.png);
+  width: 24px; height: 24px;
+  background-size: 24px 24px;
+  display: inline-block;
+}
+.a-box {
+  border: 1.5px solid #dedede;
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: flex; flex-direction: column;
+  display: none;
+}
+.calendar{
+  /* border: 1px solid orange; */
+  width: 100%;
+  display: flex; flex-direction: column; gap:10px;
+  padding-bottom: 16px;
+}
+.calendar-title{
+  /* border: 1px solid green; */
+  display: flex; flex-direction: column; gap:10px;
+}
+.calendar-title-top{
+  display: flex; justify-content: space-between;
+}
+.calendar-title-top>img{
+  width: 24px; height: 24px;
+  cursor: pointer;
+}
+.calendar-title-bottom{
+  border-bottom: 1.5px solid #dedede;
+  display: flex; flex-direction: column;
+}
+.calendar-title-bottom>ul{
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.calendar-title-bottom>ul>li{
+  /* border: 1px solid red; */
+  display: flex; align-items: center; justify-content: center;
+  flex-grow: 1; flex-basis: 0; height: 50px;
+}
+.calendar-date{
+  /* border: 1px solid green; */
+  display: flex; flex-direction: column;
+  cursor: pointer;
+}
+.calendar-date>ul{
+  /* border: 1px solid blue; */
+  display: flex;
+}
+.calendar-date>ul>li{
+  /* border: 1px solid red; */
+  display: flex; align-items: center; justify-content: center;
+  flex-grow: 1; flex-basis: 0; height: 40px;
+}
+.calendar-bottom{
+  border-top: 1.5px solid #dedede;
+  padding-top: 16px;
+  width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  cursor: pointer;
+}
+.participation{
+  /* border: 1px solid orange; */
+  width: 100%;
+  display: flex; flex-direction: column; gap:20px;
+  padding-bottom: 20px;
+}
+.participation-title{
+  /* border: 1px solid green; */
+  display: flex; gap:8px;
+}
+.participation-title>img{
+  width: 24px; height: 24px;
+}
+.participation-people-box{
+  /* border: 1px solid green; */
+  display: flex; flex-direction: column; gap:12px;
+}
+.people-item-box{
+  /* border: 1px solid blue; */
+  display: flex; justify-content: space-between; align-items: center;
+}
+.people-profile{
+  /* border: 1px solid red; */
+  display: flex; align-items: center; gap:8px;
+}
+.people-profile>img{
+  border-radius: 30px;
+  width: 40px; height: 40px;
+}
+.people-item-box>img{
+  width: 24px; height: 24px;
+  cursor: pointer;
+}
+.participation-bottom{
+  border-top: 1.5px solid #dedede;
+  padding-top: 16px;
+  width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  cursor: pointer; gap:16px;
+}
+.search-text-box{
+  border: 1.5px solid #dedede;
+  border-radius: 10px;
+  padding-left: 20px;
+  display: flex; gap:4px; align-items: center;
+  flex-grow: 1; flex-basis: 0; height: 56px;
+}
+.search-text-box>img{
+  width: 24px; height: 24px;
+}
+
+
+
+.plan-map-box{
+  /* border: 1px solid orange; */
+  flex-grow: 1; flex-basis: 0;
+  background-image: url(../image/plan-map.jpg);
+  background-size: cover;
+  background-size: center center;
+  width: 100%; height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-scale-box{
+  border: 1.5px solid #333333;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute; top: 30px; right: 30px;
+  cursor: pointer;
+}
+.map-plus{
+  border-bottom: 1.5px solid #333333;
+  display: flex; justify-content: center; align-items: center;
+  width: 35px; height: 35px;
+}
+.map-minus{
+  display: flex; justify-content: center; align-items: center;
+  width: 35px; height: 35px;
+}
+
+
+
+
+.plan2{
+  display: none;
+}
+.plan2.flex{
+  display: flex;
+}

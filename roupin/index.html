@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roupin</title>
+  <link rel="icon" href="image/favicon.png">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
+
+  <script src="jquery-3.7.1.min.js"></script>
+  
+  <!-- 나눔 스퀘어 라운드 폰트 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+</head>
+<body>
+
+
+
+  <div class="body">
+    <div class="top-bar-top">
+      <p class="suit-b2 c-fff">당신의 완벽한 여행 계획을 위한 루핀!</p>
+    </div>
+    <!-- 탑바 -->
+    <div class="top-bar">
+      <div class="top-bar-1440">
+        <nav>
+          <ul class="nanum-s2 c-333">
+            <li><a href="#">여행지</a></li>
+            <li><a href="community/community.html">커뮤니티</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo-box">
+          <img src="image/roupin-logo.png" alt="logo">
+        </a>
+        <div class="user-section">
+          <div class="user-box">
+            <a href="#" class="profile-box">
+              <div class="profile-img">
+                <img src="image/profile-oz.jpg" alt="오즈의 맙소사님">
+              </div>
+              <p class="nanum-s2 c-333">오즈의 맙소사님</p>
+            </a>
+            <a href="#" class="icon-24 menu">
+              <img src="image/icon-menu-333.png" alt="menu-icon">
+            </a>
+            <div class="user-hover-box">
+              <div class="hover-section hover-section1">
+                <div class="h-s-name-box">
+                  <a href="mypage/mypage.html" class="nanum-s2 c-333">오즈의 맙소사님</a>
+                  <a href="mypage/mypage.html" class="icon-24">
+                    <img src="image/icon-smallright-999.png" alt="오른쪽 화살표">
+                  </a>
+                </div>
+                <div class="h-s-day-box">
+                  <p class="nanum-s2 c-fff">D-20</p>
+                  <p class="suit-b2 c-fff">서울 전시 나들이☀️</p>
+                </div>
+              </div>
+              <div class="hover-section hover-section2">
+                <a href="#" class="nanum-b2 c-333">알림</a>
+                <a href="mytrip/mytrip.html" class="nanum-b2 c-333">내 여행</a>
+                <a href="#" class="nanum-b2 c-333">저장한 핀</a>
+                <a href="#" class="nanum-b2 c-333">작성한 글</a>
+              </div>
+              <div class="hover-section hover-section3">
+                <a href="#" class="nanum-b2 c-333">공지사항</a>
+                <a href="#" class="nanum-b2 c-333">고객센터</a>
+              </div>
+              <div class="hover-section hover-section4">
+                <a href="#" class="nanum-b2 c-333">로그아웃</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- 배너 -->
+    <div class="banner">
+      <div class="banner-1440">
+        <div class="banner-text-box">
+          <p class="suit-h1 c-fff">여름하면 시원한 바다!</p>
+          <p class="nanum-h1 c-fff">바다가 보이는 풀빌라<br>지금 만나보세요</p>
+        </div>
+        <div class="banner-white-box">
+          <div class="banner-travel-box">
+            <div class="travel-title">
+              <img src="image/icon-map-555.png" alt="지도">
+              <p class="suit-s2 c-555">여행지</p>
+            </div>
+            <a href="#" class="nanum-h6 c-333">제주</a>
+          </div>
+          <div class="banner-date-box">
+            <div class="date-title">
+              <img src="image/icon-date-555.png" alt="달력">
+              <p class="suit-s2 c-555">여행날짜</p>
+            </div>
+            <a href="#" class="nanum-h6 c-333">06월 26일(수) - 06월 27일(목)</a>
+          </div>
+          <div class="banner-people-box">
+            <div class="people-title">
+              <img src="image/icon-people-555.png" alt="사람">
+              <p class="suit-s2 c-555">인원수</p>
+            </div>
+            <a href="#" class="nanum-h6 c-333">4명</a>
+          </div>
+          <a href="plan/plan1.html" class="banner-rightarrow">
+            <img src="image/icon-bigright-fff.png" alt="오른쪽 화살표">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 인기있는 도시 -->
+    <div class="famous">
+      <div class="famous-1440">
+        <p class="famous-title nanum-h5 c-333">지금 인기있는 도시</p>
+        <ul>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/seoul.jpg" alt="서울">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Seoul</p>
+                <p class="suit-b1 c-555">서울특별시</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/jeju.jpg" alt="제주">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Jeju</p>
+                <p class="suit-b1 c-555">제주특별자치도</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Gapyeong.jpg" alt="가평">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Gapyeong</p>
+                <p class="suit-b1 c-555">경기도 가평</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Yeosu.jpg" alt="여수">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Yeosu</p>
+                <p class="suit-b1 c-555">전라남도 여수</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Busan.jpg" alt="부산">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Busan</p>
+                <p class="suit-b1 c-555">부산광역시</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Sokcho.jpg" alt="속초">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Sokcho</p>
+                <p class="suit-b1 c-555">강원특별자치도 속초</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Gyeongju.jpg" alt="경주">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Gyeongju</p>
+                <p class="suit-b1 c-555">경상북도 경주</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="famous-item">
+              <div class="famous-item-img">
+                <img src="image/Pohang.jpg" alt="포항">
+              </div>
+              <div class="famous-item-text">
+                <p class="nanum-h6 c-333">Pohang</p>
+                <p class="suit-b1 c-555">경상북도 포항</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 국내 hot -->
+    <div class="hot">
+      <div class="hot-1440">
+        <div class="title-box">
+          <p class="hot-title nanum-h5 c-333">국내 HOT 여행지</p>
+          <a href="#" class="nanum-b1 c-main">더보기</a>
+        </div>
+        <ul class="nanum-b2 c-555">
+          <li class="c-fff" style="background-color: #8EB3EC;">전체</li>
+          <li>서울</li>
+          <li>경기</li>
+          <li>인천</li>
+          <li>부산</li>
+          <li>충청</li>
+          <li>제주</li>
+          <li>전라</li>
+          <li>강원</li>
+        </ul>
+        <div class="hot-item-section">
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box1">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">국립현대미술관 서울</p>
+                <p class="suit-b1 c-999">미술관</p>
+              </div>
+              <p class="suit-b2 c-555">서울 종로구 삼청로 30</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box2">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">순천만습지</p>
+                <p class="suit-b1 c-999">자연,생태공원</p>
+              </div>
+              <p class="suit-b2 c-555">전남 순천시 순천만길 513-25</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box3">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">아쿠아플라넷 제주</p>
+                <p class="suit-b1 c-999">아쿠아리움</p>
+              </div>
+              <p class="suit-b2 c-555">제주 서귀포시 성산읍 섭지코지로 95</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box4">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">송도 센트럴파크</p>
+                <p class="suit-b1 c-999">근린공원</p>
+              </div>
+              <p class="suit-b2 c-555">인천 연수구 컨벤시아대로 160</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box5">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">감천문화마을</p>
+                <p class="suit-b1 c-999">체험마을</p>
+              </div>
+              <p class="suit-b2 c-555">부산 사하구 감내2로 203</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box6">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">일월수목원</p>
+                <p class="suit-b1 c-999">식물원,수목원</p>
+              </div>
+              <p class="suit-b2 c-555">경기 수원시 장안구 일월로 61</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box7">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">독립기념관</p>
+                <p class="suit-b1 c-999">박물관</p>
+              </div>
+              <p class="suit-b2 c-555">충남 천안시 동남구 목천읍 독립기념관로 1</p>
+            </div>
+          </a>
+          <a href="#" class="hot-item-box">
+            <div class="hot-img-box hot-img-box8">
+              <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+              <div class="front-bg"></div>
+            </div>
+            <div class="hot-img-text">
+              <div class="hot-text-top">
+                <p class="nanum-h6 c-333">아르떼뮤지엄 강릉</p>
+                <p class="suit-b1 c-999">미술관</p>
+              </div>
+              <p class="suit-b2 c-555">강릉 강릉시 난설헌로 131</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 루핀 pick -->
+    <div class="pick">
+      <div class="pick-1440">
+        <div class="title-box">
+          <p class="pick-title nanum-h5 c-333">이번 달 루핀 PICK</p>
+          <a href="#" class="nanum-b1 c-main">더보기</a>
+        </div>
+        <div class="pick-item-section">
+          <a href="#" class="pick-item-box pick-item-box1">
+            <div class="pick-item-text-box">
+              <p class="suit-s2 c-fff">경상북도 문경</p>
+              <p class="nanum-h3 c-fff">자연 그대로의<br>모습을 간직하는<br>낭만있는 도시</p>
+            </div>
+            <div class="front-bg-1"></div>   
+            <div class="front-bg"></div>          
+          </a>
+          <a href="#" class="pick-item-box pick-item-box2">
+            <div class="pick-item-text-box">
+              <p class="suit-s2 c-fff">경상남도 부산</p>
+              <p class="nanum-h3 c-fff">맛있는 부산!<br>비건 빵지순례 맛집</p>
+            </div>
+            <div class="front-bg-1"></div> 
+            <div class="front-bg"></div>          
+          </a>
+          <a href="#" class="pick-item-box pick-item-box3">
+            <div class="pick-item-text-box">
+              <p class="suit-s2 c-fff">강원특별자치도 평창</p>
+              <p class="nanum-h3 c-fff">365일 내내<br>색다른 재미를<Br>느낄 수 있는 대관령</p>
+            </div>
+            <div class="front-bg-1"></div> 
+            <div class="front-bg"></div>          
+          </a>
+          <a href="#" class="pick-item-box pick-item-box4">
+            <div class="pick-item-text-box">
+              <p class="suit-s2 c-fff">충청남도 태안</p>
+              <p class="nanum-h3 c-fff">피톤치드 솔향과<br>파도소리를 느끼는<br>도보여행길</p>
+            </div>
+            <div class="front-bg-1"></div> 
+            <div class="front-bg"></div>          
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 이벤트 배너 -->
+    <div class="event">
+      <div class="event-1440">
+        <div class="event-text-box">
+          <p class="nanum-h2 c-fff">바다 여행, 인생샷 스팟 추천</p>
+          <p class="suit-h2 c-fff">루핀과 함께라면 어렵지 않아!</p>
+        </div>
+        <a href="#" class="event-btn nanum-b1 c-fff">지금 바로 확인하기</a>
+      </div>
+    </div>
+    <!-- 인기 커뮤니티 -->
+    <div class="community">
+      <div class="community-1440">
+        <div class="title-box">
+          <p class="community-title nanum-h5 c-333">인기 커뮤니티 PICK</p>
+          <a href="#" class="nanum-b1 c-main">더보기</a>
+        </div>
+        <div class="community-box">
+          <div class="community-box-item">
+            <div class="community-item-big community-item-big-1">
+              <div class="community-big-text">
+                <p class="suit-s2 c-fff">@cutychaeng</p>
+                <p class="nanum-h2 c-fff">인스타 인플루언서<br>큐티챙님이 선택한<br>부산 여행 핫플 루트</p>
+              </div>
+              <a href="#" class="community-big-btn nanum-b1 c-fff">자세히 보기</a>
+              <div class="front-bg-1"></div> 
+              <div class="front-bg"></div>    
+            </div>
+            <div class="community-item-small">
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box1">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">해운대블루라인파크</p>
+                    <p class="suit-b1 c-999">테마파크</p>
+                  </div>
+                  <p class="suit-b2 c-555">해운대 청사포로 116 청사포정거장</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box2">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">광안리 유가횟집</p>
+                    <p class="suit-b1 c-999">생선회</p>
+                  </div>
+                  <p class="suit-b2 c-555">부산 수영구 광안해변호 334번길 17-11 나포리 B/D 7층</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box3">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">해목 해운대점</p>
+                    <p class="suit-b1 c-999">일식당</p>
+                  </div>
+                  <p class="suit-b2 c-555">부산 해운대구 구남로 24번길 8</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box4">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">광안리해수욕장</p>
+                    <p class="suit-b1 c-999">해수욕장,해변</p>
+                  </div>
+                  <p class="suit-b2 c-555">부산 수영구 광안해변로 219</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="community-box-item">
+            <div class="community-item-small">
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box5">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">마곡사</p>
+                    <p class="suit-b1 c-999">세계문화유산</p>
+                  </div>
+                  <p class="suit-b2 c-555">해충남 공주시 마곡사로 966</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box6">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">프린세스 피크닉카페</p>
+                    <p class="suit-b1 c-999">카페, 디저트</p>
+                  </div>
+                  <p class="suit-b2 c-555">충남 공주시 치미마을길 74 프린세스 피크닉카페</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box7">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">공산성</p>
+                    <p class="suit-b1 c-999">세계문화유산</p>
+                  </div>
+                  <p class="suit-b2 c-555">충남 공주시 금성동 53-51</p>
+                </div>
+              </a>
+              <a href="#" class="community-item-box">
+                <div class="community-img-box community-img-box8">
+                  <img class="icon-24" src="image/icon-pin-fff.png" alt="핀">
+                  <div class="front-bg"></div>
+                </div>
+                <div class="community-img-text">
+                  <div class="community-text-top">
+                    <p class="nanum-h6 c-333">국립공주박물관</p>
+                    <p class="suit-b1 c-999">박물관</p>
+                  </div>
+                  <p class="suit-b2 c-555">충남 공주시 관광단지길 34 국립공주박물관</p>
+                </div>
+              </a>
+            </div>
+            <div class="community-item-big community-item-big-2">
+              <div class="community-big-text">
+                <p class="suit-s2 c-fff">@chamdduni</p>
+                <p class="nanum-h2 c-fff">여행블로거<br>참뚜니님이 선택한<br>공주 여행 핫플 루트</p>
+              </div>
+              <a href="#" class="community-big-btn nanum-b1 c-fff">자세히 보기</a>
+              <div class="front-bg-1"></div> 
+              <div class="front-bg"></div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="footer">
+      <div class="footer-1440">
+        <div class="footer-top-box">
+          <a href="index.html">
+            <img src="image/roupin-logo-555.png" alt="로고">
+          </a>
+          <div class="footer-top-right">
+            <div class="footer-t-r-item">
+              <div class="suit-s2 c-555">회사</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">회사소개</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">채용정보</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">고객센터</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">공지사항</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">자주 묻는 질문</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">문의사항</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">이용약관</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">여행지</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">국내여행</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">교통</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">숙소</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">모바일 루핀</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">iOS</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">Android</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-box">
+          <div class="footer-bottom-top">
+            <ul>
+              <li><a href="#"><span class="suit-s2 c-555">이용약관</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-main">개인정보처리방침</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">사이트맵</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">환불정책</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">소비자분쟁해결 기준</span></a></li>
+            </ul>
+            <div class="footer-sns-icon">
+              <a href=""><img src="image/twitter-square.png" alt="트위터"></a>
+              <a href=""><img src="image/facebook-square.png" alt="페이스북"></a>
+              <a href=""><img src="image/instagram-square.png" alt="인스타"></a>
+            </div>
+          </div>
+          <div class="footer-bottom-bottom">
+            <ul>
+              <li class="suit-b2 c-999"><a href="#">(주)루핀컴퍼니</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">대전광역시 동구 대학로 62(커뮤니케이션디자인학과)</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">대표 : 박현지, 송채연</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">사업자등록번호 : 123-45-67890</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">사업자정보확인</a></li>
+            </ul>
+            <ul>
+              <li class="suit-b2 c-999"><a href="#">전자우편주소 : ROUPIN@PLAN.COM</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">통신판매업신고 : 2024-대전-1234</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">관광사업자 등록번호 : 제1234-56호</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">고객센터 : 1234-5678</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">호스팅 사업자 : (주)루핀컴퍼니</a></li>
+            </ul>
+            <p class="suit-b2 c-999">Copyright ⓒ 2024 ROUPIN COMPANY. ALL RIGHTS RESERVERD.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

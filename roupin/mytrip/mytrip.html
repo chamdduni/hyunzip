@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roupin</title>
+  <link rel="icon" href="../image/favicon.png">  
+  <link rel="stylesheet" href="mytrip-style.css">
+  <link rel="stylesheet" href="../font.css">
+
+  <script src="../jquery-3.7.1.min.js"></script>
+  
+  <!-- 나눔 스퀘어 라운드 폰트 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+</head>
+<body>
+  <div class="body">
+    <div class="top-bar-top">
+      <p class="suit-b2 c-fff">당신의 완벽한 여행 계획을 위한 루핀!</p>
+    </div>
+    <!-- 탑바 -->
+    <div class="top-bar">
+      <div class="top-bar-1440">
+        <nav>
+          <ul class="nanum-s2 c-333">
+            <li><a href="#">여행지</a></li>
+            <li><a href="../community/community.html">커뮤니티</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+        <a href="../index.html" class="logo-box">
+          <img src="../image/roupin-logo.png" alt="logo">
+        </a>
+        <div class="user-section">
+          <div class="user-box">
+            <a href="#" class="profile-box">
+              <div class="profile-img">
+                <img src="../image/profile-oz.jpg" alt="오즈의 맙소사님">
+              </div>
+              <p class="nanum-s2 c-333">오즈의 맙소사님</p>
+            </a>
+            <a href="#" class="icon-24 menu">
+              <img src="../image/icon-menu-333.png" alt="menu-icon">
+            </a>
+            <div class="user-hover-box">
+              <div class="hover-section hover-section1">
+                <div class="h-s-name-box">
+                  <a href="../mypage/mypage.html" class="nanum-s2 c-333">오즈의 맙소사님</a>
+                  <a href="../mypage/mypage.html" class="icon-24">
+                    <img src="../image/icon-smallright-999.png" alt="오른쪽 화살표">
+                  </a>
+                </div>
+                <div class="h-s-day-box">
+                  <p class="nanum-s2 c-fff">D-20</p>
+                  <p class="suit-b2 c-fff">서울 전시 나들이☀️</p>
+                </div>
+              </div>
+              <div class="hover-section hover-section2">
+                <a href="#" class="nanum-b2 c-333">알림</a>
+                <a href="#" class="nanum-b2 c-333">내 여행</a>
+                <a href="#" class="nanum-b2 c-333">저장한 핀</a>
+                <a href="#" class="nanum-b2 c-333">작성한 글</a>
+              </div>
+              <div class="hover-section hover-section3">
+                <a href="#" class="nanum-b2 c-333">공지사항</a>
+                <a href="#" class="nanum-b2 c-333">고객센터</a>
+              </div>
+              <div class="hover-section hover-section4">
+                <a href="#" class="nanum-b2 c-333">로그아웃</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- 마이페이지 -->
+    <div class="mytrip">
+      <div class="mytrip-1440">
+        <div class="left-section">
+          <a href="../mypage/mypage.html">
+            <p class="nanum-b2 c-333">마이페이지</p>
+            <img src="../image/icon-smallright-999.png" alt="">
+          </a>
+          <a href="#">
+            <p class="nanum-b2 c-333">알림</p>
+            <img src="../image/icon-smallright-999.png" alt="">
+          </a>
+          <a href="#">
+            <p class="nanum-b2 c-main">내 여행</p>
+            <img src="../image/icon-smallright-999.png" alt="">
+          </a>
+          <a href="#">
+            <p class="nanum-b2 c-333">저장한 핀</p>
+            <img src="../image/icon-smallright-999.png" alt="">
+          </a>
+          <a href="#" style="border-bottom: 0px solid;">
+            <p class="nanum-b2 c-333">작성한 글</p>
+            <img src="../image/icon-smallright-999.png" alt="">
+          </a>
+        </div>
+        <div class="right-section">
+          <p class="nanum-h3 c-333">내 여행</p>
+          <div class="mytrip-soon">
+            <p class="nanum-h6 c-333">다가오는 여행</p>
+            <div class="mytrip-soon-box">
+              <div class="soon-item">
+                <div class="soon-item-top">
+                  <div class="soon-item-top-left">
+                    <p class="nanum-h5 c-fff">서울 전시 나들이 ☀️</p>
+                    <p class="suit-b1 c-fff">2024.07. 30(화) - 2024.07. 31(수)</p>
+                  </div>
+                  <div class="soon-item-top-right">
+                    <img src="../image/icon-edit2-fff.png" alt="">
+                  </div>
+                </div>
+                <div class="soon-item-bottom">
+                  <p class="nanum-h5 c-fff">D-20</p>
+                </div>
+                <div class="front-333"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mytrip-end">
+            <p class="nanum-h6 c-333">지난 여행</p>
+            <div class="mytrip-end-box">
+              <div class="end-item">
+                <img src="../image/mytrip-busan.jpg" alt="">
+                <div class="end-item-right">
+                  <div class="end-item-right-top">
+                    <p class="nanum-s1 c-333">부산 힐링 여행!</p>
+                    <img src="../image/icon-edit2-999.png" alt="">
+                  </div>
+                  <div class="end-item-right-bottom">
+                    <p class="suit-b1 c-999">부산광역시</p>
+                    <p class="suit-b1 c-555">2024.02. 27(화) - 02. 28(수)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="end-item">
+                <img src="../image/pool.jpg" alt="">
+                <div class="end-item-right">
+                  <div class="end-item-right-top">
+                    <p class="nanum-s1 c-333">태안 바다 구경 🐬</p>
+                    <img src="../image/icon-edit2-999.png" alt="">
+                  </div>
+                  <div class="end-item-right-bottom">
+                    <p class="suit-b1 c-999">충청남도 태안</p>
+                    <p class="suit-b1 c-555">2024.06. 26(수) - 06. 27(목)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="footer">
+      <div class="footer-1440">
+        <div class="footer-top-box">
+          <a href="../index.html">
+            <img src="../image/roupin-logo-555.png" alt="로고">
+          </a>
+          <div class="footer-top-right">
+            <div class="footer-t-r-item">
+              <div class="suit-s2 c-555">회사</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">회사소개</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">채용정보</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">고객센터</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">공지사항</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">자주 묻는 질문</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">문의사항</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">이용약관</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">여행지</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">국내여행</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">교통</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">숙소</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-t-r-item"> 
+              <div class="suit-s2 c-555">모바일 루핀</div>
+              <ul>
+                <li><a href="#"><span class="suit-b2 c-999">iOS</span></a></li>
+                <li><a href="#"><span class="suit-b2 c-999">Android</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-box">
+          <div class="footer-bottom-top">
+            <ul>
+              <li><a href="#"><span class="suit-s2 c-555">이용약관</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-main">개인정보처리방침</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">사이트맵</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">환불정책</span></a></li>
+              <li><a href="#"><span class="suit-s2 c-555">소비자분쟁해결 기준</span></a></li>
+            </ul>
+            <div class="footer-sns-icon">
+              <a href=""><img src="../image/twitter-square.png" alt="트위터"></a>
+              <a href=""><img src="../image/facebook-square.png" alt="페이스북"></a>
+              <a href=""><img src="../image/instagram-square.png" alt="인스타"></a>
+            </div>
+          </div>
+          <div class="footer-bottom-bottom">
+            <ul>
+              <li class="suit-b2 c-999"><a href="#">(주)루핀컴퍼니</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">대전광역시 동구 대학로 62(커뮤니케이션디자인학과)</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">대표 : 박현지, 송채연</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">사업자등록번호 : 123-45-67890</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">사업자정보확인</a></li>
+            </ul>
+            <ul>
+              <li class="suit-b2 c-999"><a href="#">전자우편주소 : ROUPIN@PLAN.COM</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">통신판매업신고 : 2024-대전-1234</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">관광사업자 등록번호 : 제1234-56호</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">고객센터 : 1234-5678</a></li>
+              <li class="suit-b2 c-999">|</li>
+              <li class="suit-b2 c-999"><a href="#">호스팅 사업자 : (주)루핀컴퍼니</a></li>
+            </ul>
+            <p class="suit-b2 c-999">Copyright ⓒ 2024 ROUPIN COMPANY. ALL RIGHTS RESERVERD.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>
