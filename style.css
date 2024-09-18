@@ -169,7 +169,7 @@ display: flex; align-items: center; gap:20px;}
   .pf-info-text{display: flex; flex-direction: column;}
   .pf-main-text{border-right: 0px solid #333;
     padding-right: 0px; padding-bottom: 15px; 
-    border-bottom: 1px solid #333;}
+    border-bottom: 1px solid #333; z-index: -1;}
 }
 
 @media screen and (max-width:650px) {
